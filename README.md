@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# 🎓 TNEA College Search Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application to help Tamil Nadu Engineering aspirants easily explore and analyze possible college options based on their **rank** or **cutoff** from previous years.
 
-## Available Scripts
+Hosted on **GitHub Pages** — no installation required.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌟 What This Application Does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* 🔍 **Search by Rank or Cutoff**
+  Enter your general rank or cutoff to view possible colleges.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* 🧑‍🏫 **Filter by Community**
+  Choose from OC, BC, MBC, SC, SCA, BCM to get community-specific results.
 
-### `npm test`
+* 🏛 **Select Course Preferences**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * By **Course ID**
+  * By **Course Name**
+  * Or choose from grouped filters:
+    `ANY`, `CS Related`, `Core Related`
 
-### `npm run build`
+* 🎯 **Certainty Options**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * **Confirm**: Shows highly likely colleges
+  * **Maybe**: Expands range for a broader view
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* 📊 **Aggregated Data**
+  Uses combined data from 2023 & 2024 (Rank and Cutoff)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* 🧾 **Paginated Results**
+  Easy-to-read, scrollable table sorted by rank or cutoff
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 How to Use
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Visit the hosted web app:
+   👉 [https://praveenanand333.github.io/tnea_analysis/](https://praveenanand333.github.io/tnea_analysis/) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Choose your **search mode**: Rank or Cutoff.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Enter your **rank** or **cutoff** value.
 
-## Learn More
+4. Select your **community category**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Optionally, select:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * **Course ID**
+   * **Course Name**
+   * Or a **Course Group**
 
-### Code Splitting
+6. Choose **Certainty Level**: Confirm or Maybe.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. Click **Search** to get your list of potential colleges.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📌 Notes
 
-### Making a Progressive Web App
+* Results are based on real data from previous years.
+* This tool is intended as a reference and does not guarantee admissions.
+* Designed to run completely on the client side — no backend or database required.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
