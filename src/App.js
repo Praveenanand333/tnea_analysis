@@ -16,25 +16,45 @@ function App() {
   const [courseMap, setCourseMap] = useState({});
   const [results, setResults] = useState([]);
 
-  useEffect(() => {
-    fetch('/unique_courses.json')
-      .then(res => res.json())
-      .then(setCourseMap);
-  }, []);
+useEffect(() => {
+  fetch(process.env.PUBLIC_URL + '/unique_courses.json')
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.json();
+    })
+    .then(setCourseMap)
+    .catch(error => {
+      console.error('Failed to load unique_courses.json:', error);
+      alert('⚠️ Failed to load course data. Please make sure unique_courses.json is placed correctly in the public folder.');
+    });
+}, []);
 
-  const fetchData = async () => {
-    if (!value || !community) return;
-    const filesToFetch = [
-      'rank_2023.json', 'rank_2024.json',
-      'cutoff_2023.json', 'cutoff_2024.json'
-    ];
 
+const fetchData = async () => {
+  if (!value || !community) return;
+
+  const filesToFetch = [
+    'rank_2023.json', 'rank_2024.json',
+    'cutoff_2023.json', 'cutoff_2024.json'
+  ];
+
+  try {
     const dataFiles = await Promise.all(
-      filesToFetch.map(file => fetch(`/${file}`).then(res => res.json()))
+      filesToFetch.map(file =>
+        fetch(process.env.PUBLIC_URL + `/${file}`)
+          .then(res => {
+            if (!res.ok) throw new Error(`Failed to load ${file}`);
+            return res.json();
+          })
+      )
     );
 
     const filtered = [];
-    const lowerBound = mode === 'rank' ? getRankLowerBound(value, certainty) : getCutoffLowerBound(value, certainty);
+    const lowerBound = mode === 'rank'
+      ? getRankLowerBound(value, certainty)
+      : getCutoffLowerBound(value, certainty);
 
     dataFiles.forEach((data, idx) => {
       const isRank = filesToFetch[idx].toLowerCase().includes('rank');
@@ -61,7 +81,12 @@ function App() {
     });
 
     setResults(filtered);
-  };
+  } catch (error) {
+    console.error('Error loading data files:', error);
+    alert('Error loading rank/cutoff data. Please make sure the JSON files are in the public folder.');
+  }
+};
+
 
   return (
     <div className="app-container">
