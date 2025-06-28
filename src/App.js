@@ -65,7 +65,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="app-title">TNEA Search</h1>
+      <h1 className="app-title">TNEA College Search</h1>
 
       <Filters
         mode={mode} setMode={setMode}
