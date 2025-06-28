@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tnea_analyser/static/css/main.6d9ae541.css",
+    "main.js": "/tnea_analyser/static/js/main.3d73eccf.js",
+    "index.html": "/tnea_analyser/index.html",
+    "main.6d9ae541.css.map": "/tnea_analyser/static/css/main.6d9ae541.css.map",
+    "main.3d73eccf.js.map": "/tnea_analyser/static/js/main.3d73eccf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d9ae541.css",
+    "static/js/main.3d73eccf.js"
+  ]
+}
