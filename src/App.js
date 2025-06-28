@@ -36,8 +36,8 @@ const fetchData = async () => {
   if (!value || !community) return;
 
   const filesToFetch = [
-    'rank_2023.json', 'rank_2024.json',
-    'cutoff_2023.json', 'cutoff_2024.json'
+    'Rank_2023.json', 'Rank_2024.json',
+    'Cutoff_2023.json', 'Cutoff_2024.json'
   ];
 
   try {
