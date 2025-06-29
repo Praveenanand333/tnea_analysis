@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Filters from './components/Filters';
 import ResultsTable from './components/ResultsTable';
 import { communityList, courseGroups, getRankLowerBound, getCutoffLowerBound } from './utils/helpers';
+import DownloadButton from './components/DownloadButton';
 import './App.css';
 
 function App() {
@@ -105,6 +106,8 @@ const fetchData = async () => {
       />
 
       <ResultsTable results={results} community={community} />
+      {results.length > 0 && <DownloadButton results={results} community={community} />}
+
     </div>
   );
 }
