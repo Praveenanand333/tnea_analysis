@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tnea_analysis/static/css/main.6d9ae541.css",
-    "main.js": "/tnea_analysis/static/js/main.8f5e89cb.js",
+    "main.css": "/tnea_analysis/static/css/main.9573539d.css",
+    "main.js": "/tnea_analysis/static/js/main.5c170eea.js",
     "index.html": "/tnea_analysis/index.html",
-    "main.6d9ae541.css.map": "/tnea_analysis/static/css/main.6d9ae541.css.map",
-    "main.8f5e89cb.js.map": "/tnea_analysis/static/js/main.8f5e89cb.js.map"
+    "main.9573539d.css.map": "/tnea_analysis/static/css/main.9573539d.css.map",
+    "main.5c170eea.js.map": "/tnea_analysis/static/js/main.5c170eea.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d9ae541.css",
-    "static/js/main.8f5e89cb.js"
+    "static/css/main.9573539d.css",
+    "static/js/main.5c170eea.js"
   ]
 }
